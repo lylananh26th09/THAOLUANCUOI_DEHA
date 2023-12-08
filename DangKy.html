@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Đăng ký</title>
+	<link rel="stylesheet" href="DangKy.css">
+	<script type="text/javascript" src="DangKy.js"></script>
+	<LINK REL="SHORTCUT ICON"  HREF="picture_kawaii/logo.jpg">
+</head>
+<body class="anhnen">
+
+	<div class="header">
+		<div class="header_left">
+			<a href="Chickenflyy.html"><p class="ChucNang1">CHICKENFLYY</p></a>
+			<ul class="cha">
+			<li><a href="#"><p class="ChucNang1">GIÀY</p></a>
+				<ul class="con">
+					<li><a href="GiayNike.html">NIKE</a></li>
+					<li><a href="GiayPuma.html">PUMA</a></li>
+					<li><a href="GiayNB.html">NEW BELANCE</a></li>
+					<li><a href="GiayJordan.html">JORDAN</a></li>
+					<li><a href="GiayMLB.html">MLB</a></li>
+					<li><a href="PhuKien.html">PHỤ KIỆN</a></li>
+				</ul>
+			</li>
+
+			<li><a href="BanChay.html"><p class="ChucNang1">BÁN CHẠY</p></a>
+				<ul class="con1">
+					<li><a href="BanChay.html">Bán chạy tháng 8 2023</a></li>
+					<li><a href="BanChayT72023.html">Bán chạy tháng 7 2023</a></li>
+					<li><a href="BanChay2023.html">Bán chạy nhất 2023</a></li>
+				</ul>
+			</li>
+
+			</ul>
+		</div>
+
+		<div class="header_center">
+			<a class="TrangChu" href="http://localhost/Bai_thao_luan_web1/" ><img src="picture_kawaii/Picture7.png"></a>
+		</div>
+		
+		<div class="header_right" >
+			<a href="#" class="ChucNang2" ><img src="picture_kawaii/Picture1.png" alt=""></a>
+			<a href="#" class="ChucNang2" ><img src="picture_kawaii/Picture3.png" alt=""></a>
+			<a href="#" class="ChucNang2" ><img src="picture_kawaii/Picture5.png" alt=""></a>
+		</div>
+	</div>
+
+	<div class="KeNgang"></div>
+
+<div class="bang">
+    <div class="left">
+    	<p class="dangnhap" href="dangky.html">ĐĂNG KÝ</p>
+      	<form id="from">
+      		<label class="tt" >Tên Đăng Nhập: <span>*</span></label>
+    <br>
+    <input class="tt" type="text" name="ten" id="txtten" onblur="checktenid()">
+    <span class="erron" id="erronid"></span>
+    <br>
+
+    <label class="tt" for="txtmk">Mật khẩu<span>*</span></label>
+    <br>
+    <input class="tt" type="password" name="mk" id="txtmk" onblur="checkmk()">
+    <span class="erron" id="erronmk"></span>
+    <br>  
+
+    <label class="tt" for="txtsdt">Số điện thoại<span>*</span></label>
+    <br>
+    <input class="tt" type="text" name="sdt" id="txtsdt"  onblur="checksdt()">
+    <span class="erron" id="erronsdt"></span>
+    <br>
+
+    <label class="tt" for="txtemail">Email<span>*</span></label>
+    <br>
+    <input class="tt" type="text" name="email" id="txtemail"  onblur="checkemail()"> 
+    <span class="erron" id="erronemail"></span>
+    <br>    
+
+    <label class="tt" for="txtdob">Ngày sinh<span>*</span></label>
+    <br>
+    <input class="tt" type="date" name="dob" id="txtdob">
+    <br>  
+
+    <td class="tt" >Giới tính<span>*</span> 
+        
+         <input  type="radio" name="gen" id="rdom" value="1"
+                             checked>
+        <label for="rdom">Nam</label>
+                             
+        <input type="radio" name="gen" value="2" id="rdofm">
+        <label for="rdofm">Nữ</label>
+    </td><br>
+        <label style="margin:  0 10px ;" class="tt" for="city"  >Khu Vực<span>*</span></label><br>
+    <select class="tt" type="city" name="city" id="city">
+        <option value="3">Hồ Chí Minh</option>
+        <option value="4">Hà Nội</option>
+        <option value="5">Đà Nẵng</option>
+        <option value="6">Cần thơ</option>
+        <option value="7">Đồng Nai</option>
+        <option value="8">Hải Phòng</option>
+        <option value="9">Quảng Ninh</option>
+        <option value="10">Bà Rịa-Vũng Tàu</option>
+        <option value="11">Bình Định</option>
+        <option value="12">Bình Dương</option>
+        <option value="13">Đắk Lắk</option>
+        <option value="14">Trà Vinh</option>
+        <option value="15">Yên Bái</option>
+        <option value="16">Vĩnh Long</option>
+        <option value="17">Kiên Giang</option>
+        <option value="18">Hậu Giang</option>
+        <option value="19">Hà Tĩnh</option>
+        <option value="20">Phú Yên</option>
+        <option value="21">Bình Phước</option>
+        <option value="22">Bình Thuận</option>
+        <option value="23">Cà Mau</option>
+        <option value="24">Cao Bằng</option>
+        <option value="25">Đắk Nông</option>
+        <option value="26">Điện Biên</option>
+        <option value="27">Đồng Tháp</option>
+        <option value="28">Bắc Giang</option>
+        <option value="29">Gia Lai</option>
+        <option value="30">An Giang</option>
+        <option value="31">Bạc Liêu</option>
+        <option value="32">Hà Nam</option>
+        <option value="33">Bắc Cạn</option>
+        <option value="34">Bắc Ninh</option>
+        <option value="35">Bến Tre</option>
+        <option value="36">Hà Tây</option>
+        <option value="37">Hải Dương</option>
+        <option value="38">Hòa Bình</option>
+        <option value="39">Hưng Yên</option>
+        <option value="40">Khánh Hòa</option>
+        <option value="41">Kon Tum</option>
+        <option value="42">Lai Châu</option>
+        <option value="43">Lâm Đồng</option>
+        <option value="44">Lạng Sơn</option>
+        <option value="45">Lào Cai</option>
+        <option value="46">Long An</option>
+        <option value="47">Nam Định</option>
+        <option value="48">Nghệ An</option>
+        <option value="49">Ninh Bình</option>
+        <option value="50">Ninh Thuận</option>
+        <option value="51">Phú Thọ</option>
+        <option value="52">Quảng Bình</option>
+        <option value="53">Quảng Nam</option>
+        <option value="54">Quảng Ngãi</option>
+        <option value="55">Quảng Trị</option>
+        <option value="56">Sóc Trăng</option>
+        <option value="57">Sơn La</option>
+        <option value="58">Tây Ninh</option>
+        <option value="59">Thái Bình</option>
+        <option value="60">Thái Nguyên</option>
+        <option value="61">Thanh Hóa</option>
+        <option value="62">Thừa Thiên -Huế</option>
+        <option value="63">Tiền Giang</option>
+        <option value="64">Tuyên Quang</option>
+        <option value="65">Vĩnh Phúc</option>
+     </select>
+     <br>
+
+     <button  onclick="Dang_ky()">ĐĂNG KÝ </button>
+</form>
+</div>
+</div>
+
+</body>
+</HTML>
