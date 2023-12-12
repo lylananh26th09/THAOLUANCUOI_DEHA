@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+.row{
+	background-color: #FCDFB2;
+	padding: 10px;
+	margin: 0 80px;
+}
+
+.page-header{
+	margin: 60px 0 10px 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	width: 100%;
+ 	padding: 10px;
+
+}
+
+.col-lg-5{
+	width: 100%;
+}
+
+.form-group label{
+	font-size: 20px;
+	color: #ed7d31;
+}
+
+.form-control{
+	font-size: 18px;
+	height: 40px;
+}
+
+.btn-primary{
+	background-color:#ed7d31 ;
+	border-color: #ed7d31;
+	height: 40px;
+	width: 130px;
+	text-align: center;
+	font-size: 21px;
+}
+
+.btn-primary:hover{
+	font-weight: 600;
+	background-color:#ed7d31 ;
+	border-color: #ed7d31;
+}

@@ -1,0 +1,336 @@
+@charset 'UTF-8';
+
+html,body{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* .container-fluid {
+	padding: 0;
+}
+.navbar-header{
+	background: #ed7d31;
+	width: 100%
+}
+
+.navbar-header .navbar-brand {
+    color: #fff;
+    font-size: 20px;
+     text-transform: uppercase;
+   font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+.navbar-header .navbar-brand span {
+    color: #ed7d31;
+}
+
+
+.glyph.stroked.male-user{
+	width: 20px;
+	height: 50px;
+	color: white;
+	text-align: center;
+}
+
+.dropdown.pull-right li{
+	list-style-type: none;
+}
+
+.dropdown-toggle a:hover{
+	text-decoration: none ;
+	color: white;
+}
+ */
+
+
+/*navbar*/
+
+.navbar-header .navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.navbar-inverse {
+    background-color: #ed7d31;
+}
+
+.navbar {
+    border: 0;
+}
+
+.navbar-fixed-top {
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #fff;
+        box-shadow: 1px 0px 10px rgba(0, 0, 0, .05);
+    }
+    .navbar-header {
+        width: 100%;
+    }
+}
+
+.navbar input:focus {
+    color: #fff;
+    background: #555;
+    border: 1px solid #ed7d31;
+    outline: 0;
+    box-shadow: inset 0px 0px 0px 1px #ed7d31;
+}
+
+.navbar-inverse {
+    background-color: #ed7d31;
+}
+
+.user-menu {
+    display: block;
+    margin-top: 14px;
+    margin-right: 10px;
+    float: right;
+    list-style: none;
+    padding: 0;
+}
+
+.user-menu a {
+    color: #fff;
+}
+
+.user-menu a:hover,
+.user-menu a:focus {
+    text-decoration: none;
+}
+
+/* Sidebar */
+
+.sidebar {
+    display: block;
+    background-color: #fff;
+    padding: 0;
+    display: none;
+}
+
+.sidebar form {
+    padding: 20px 15px 5px 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #fff;
+        box-shadow: 1px 0px 10px rgba(0, 0, 0, .05);
+    }
+    .navbar-header {
+        width: 100%;
+    }
+}
+
+.sidebar ul.nav a:hover,
+.sidebar ul.nav li.parent ul li a:hover {
+    text-decoration: none;
+    background-color: #e9ecf2;
+}
+
+.sidebar ul.nav .active a,
+.sidebar ul.nav li.parent a.active,
+.sidebar ul.nav .active>a:hover,
+.sidebar ul.nav li.parent a.active:hover,
+.sidebar ul.nav .active>a:focus,
+.sidebar ul.nav li.parent a.active:focus {
+    color: #fff;
+    background-color: #ed7d31;
+}
+
+ .sidebar ul.nav ul,
+.sidebar ul.nav ul li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.sidebar ul.nav ul.children {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+.sidebar ul.nav ul.children li a {
+    height: 40px;
+    background: #f9f9f9;
+    color: #ed7d31!important;
+}
+
+.sidebar ul.nav li.current a {
+    background-color: #ed7d31;
+    color: #fff!important;
+}
+
+.sidebar ul.nav li.parent ul li a {
+    border: none;
+    display: block;
+    padding-left: 30px;
+    line-height: 40px;
+}
+
+.sidebar span.glyphicon {
+    margin-right: 10px;
+}
+
+.sidebar ul.nav li.divider {
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.sidebar .attribution {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+}
+
+
+/*Breadcrumbs*/
+
+.breadcrumb {
+    border-radius: 0;
+    padding: 10px 15px;
+    background: #e9ecf2;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    margin: 0;
+}
+
+.todo-list-item .glyphicon {
+    margin-right: 5px;
+    color: #9fadbb;
+}
+
+.todo-list-item .glyphicon:hover {
+    margin-right: 5px;
+    color: #1b3548;
+}
+
+.todo-list {
+    padding: 0;
+    margin: -15px;
+    background: #fff;
+    color: #5f6468;
+}
+
+#checkbox {
+    margin: 0;
+}
+
+.todo-list .checkbox {
+    display: inline-block;
+    margin: 0px;
+}
+
+.panel-body input[type=checkbox]:checked+label {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.todo-list-item {
+    list-style: none;
+    line-height: 0.9;
+    padding: 14px 15px 8px 15px;
+}
+
+.todo-list-item:hover,
+a.todo-list-item:focus {
+    text-decoration: none;
+    background-color: #f6f6f6;
+}
+
+.todo-list-item .trash .glyph:hover {
+    color: #ef4040;
+}
+
+/*Icons*/
+
+.sidebar .glyph,
+.user-menu .glyph {
+    height: 16px;
+    width: 16px;
+    margin: 0 10px 0 0;
+    stroke-width: 3px;
+}
+
+.user-menu .glyph {
+    stroke-width: 4px;
+}
+
+.breadcrumb .glyph {
+    height: 14px;
+    width: 14px;
+    margin: -2px 0 0 0;
+    stroke-width: 4px;
+}
+
+.alert .glyph,
+.panel-heading .glyph {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px 0 0;
+    stroke-width: 2px;
+}
+
+.panel-widget .glyph {
+    stroke-width: 2px;
+}
+
+.todo-list .glyph {
+    width: 14px;
+    height: 14px;
+    stroke-width: 4px;
+    color: #999;
+}
+
+.glyph.table {
+    background: none;
+    border: none;
+}
+
+/*thanh ben trai*/
+a,
+a:hover,
+a:focus {
+    color: black;
+}
+
+
