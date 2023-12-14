@@ -1,4 +1,6 @@
 <?php
+// LẤY TRANG VÀ TRUY VẤN TÌM KIẾM
+
 // Thanh phân trang
 if(isset($_GET['page'])){
     $page=$_GET['page'];
@@ -18,11 +20,14 @@ $arr_stextNew = explode(' ',$stextNew);// ngat 1 chuoi thanh 1 mang cac ki tu
 $stextNew = implode('%',$arr_stextNew); // noi phan tu mang voi 1 chuoi
 $stextNew='%'.$stextNew.'%';
 
+
+// TRUY VẤN CƠ SỞ DỮ LIỆU
 $sql="SELECT * FROM sanpham where ten_sp LIKE ('$stextNew') order by id_sp limit $perRow,$rowsPerPage ";
 $query = mysqli_query($conn,$sql);
 
 // tong so ban ghi
 $totalRows= mysqli_num_rows(mysqli_query($conn, "SELECT * FROM sanpham where ten_sp LIKE ('$stextNew')"));
+
 //tong so trang
 $totalPages=ceil($totalRows/$rowsPerPage);
 //xay dung thanh phan trang
